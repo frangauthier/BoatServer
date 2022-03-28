@@ -2,7 +2,6 @@ require('dotenv').config();
 const express = require('express');
 const morgan = require('morgan');
 const { connectCallback } = require('./database');
-const { createUserSimple, createUserBetter, signIn } = require('./user.service');
 const bodyParser = require('body-parser');
 const boatRouter = require('./routers/boat.router');
 const app = express();
